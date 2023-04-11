@@ -86,7 +86,7 @@ export const TaskList = () => {
   )
 
   return list.length > 0 ? (
-    <Accordion allowToggle>{taskLists}</Accordion>
+    <Accordion allowToggle defaultIndex={0}>{taskLists}</Accordion>
   ) : (
     <Box w='100%' color='white' textAlign='center' fontSize='sm'>目前無追蹤任務</Box>
   )
